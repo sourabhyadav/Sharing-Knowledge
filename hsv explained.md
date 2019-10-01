@@ -12,7 +12,7 @@ Changing this changes crispness of the color.
 **Value** defines the intensity of the color. Basically it is amount of black or white mixed with **Hue**. 
 Changing this changes the intensity of the color. 
 
+You can convert rgb to hsv colorspace 
 
 [1]: http://www.tech-faq.com/hsv.html
-[2]: https://help.github.com/en/articles/basic-writing-and-formatting-syntax#headings
 
