@@ -14,5 +14,6 @@ Changing this changes the intensity of the color.
 
 Reference:
 [1] http://www.tech-faq.com/hsv.html
+
 [2] https://help.github.com/en/articles/basic-writing-and-formatting-syntax#headings
 
