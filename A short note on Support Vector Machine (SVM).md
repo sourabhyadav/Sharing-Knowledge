@@ -1,4 +1,4 @@
-# Support Vector Machine
+# [Support Vector Machine][1]
 **Why SVM?**: When we have 2 categories in your dataset but no obvious linear classifier that separates them in a nice way we use support vector machines (SVM)
 Basically, the support machine transforms the given data from lower dimensional space to higher dimensional space to find the maximum marginal classifier (decision boundary) to classify them.
 
@@ -49,3 +49,5 @@ To make the transform mathematically possible the classifier uses to transform i
 **Note:** another commonly used kernel is **Radial Bais Kernel** . Radial Basis Kernel finds the support vecotr classifier in infinite dimensions. I don't have more details about this kernel function as of now.
 
 **The Kernel Trick** basically kernel function does not transform the complete dataset into a higher dimension because sometime it might overshoot the amount of computation and memory required to do so. Thus, the kernel trick reduces the computations by avoiding the math that transforms the data from low to high dimensions and it makes calculating relationships in the infinite dimensions used by  Radial Bias Kernel to compute the bset classifier in infinite space.  
+
+[1]: https://www.youtube.com/watch?v=efR1C6CvhmE
