@@ -10,10 +10,10 @@ Performace on these low classes would be very low. It is because the network has
 
 **Solution for class imbalance problem?**
 
-Easiest solution[1] is you sample the augmentation to avoid class imbalance i.e. Oversample rare classes dataset and undersample frequent datasets. This might help in some cases.
+[Easiest solution][1] is you sample the augmentation to avoid class imbalance i.e. Oversample rare classes dataset and undersample frequent datasets. This might help in some cases.
 
 Another solution is:
-**The Focal Loss:[1]**
+**[The Focal Loss:][1]**
 
 Focal loss (FL) adopts another approach to reduce the loss for a well-trained class. So whenever the model is good at detecting background, it will reduce its loss and reemphasize the training on the object class.
 This is achieved by extending the cross-entropy loss while penalizing the loss for lower weights.
