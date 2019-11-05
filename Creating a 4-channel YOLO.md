@@ -1,7 +1,7 @@
 # Creating a 4-channel YOLO training using Darknet
 I was using trying to train a Yolo network on 4-channle as input training images. 4-channels images would be required for using object detection using depth image or optiflow based object detection could be useful. I thought to add optical flow as flow data along with rgb data to create object detection for moving objects.
 
-**Use [Darknet](1) as the framework it does not contain support for 4-channels as the input.** And I did not find any Git repo for making it work. So I figured out how to make it happen.
+**[Darknet](1) framework does not contain support for 4-channels as the input.** And I did not find any Git repo for making it work. So I figured out how to make it happen.
 
 Following are thing sdone to make 4-channel training Yolo work:
 1. Create the 4-channel images and save it is as .png, **Why png** as jpg images does not contain 4-channels stuff. 
