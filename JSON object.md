@@ -1,6 +1,7 @@
 # Short Note on [JSON][2]
 
-** What is JSON?**
+**What is JSON?**
+
 JSON stands for **J**ava **S**cript **O**ject **N**otation. 
 Basically, it is globally accepted **text format** which is used to send, receive & store texts from browser to server.  
 It can handle Arrays, Strings, Boolean, Number and another dict (key/value) pair.
