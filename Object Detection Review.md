@@ -46,7 +46,7 @@ Deep methods solved lot of these problems and now it can be used in commercial d
 
 There are two major methodlogies famous in Deep object detection space. Both has its own pro and cons depends on your need and computational capacity.
 
-###Two-stage Networks:
+### Two-stage Networks:
 These kind of methods uses 3 passes for object detection. In the first phase it detects potential areas of objects to be present. Later it localizes and detects the object in the iamge.
 
 [**Region Convolutional Network (R-CNN):**](5)
@@ -85,7 +85,7 @@ These kind of methods uses 3 passes for object detection. In the first phase it 
 * A faster R-CNN with FPN produced state-of-the art results on MS COCO dataset :MSCOCO dataset without bells and whistles (COCO mAP@.5=59.1%, COCO mAP@[.5, .95]=36.2%). 
 
 
-**Single-stage Networks:**
+### Single-stage Networks:
 
 This kind of networks use link CNN trunk to detect and categorise the class of the object in a given image.
 
