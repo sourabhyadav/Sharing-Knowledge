@@ -1,8 +1,12 @@
 ## Practice based Docker learnings. It includes Docker concepts, commands and important links to solve issues.
 
-**Install Docker:**
+**Install Docker:** [TODO]
+* Installing docker 19.03 for all the latest updates. Bellow commands were tested on docker 19.03
 
-**Add user group to the docker:**
+**Install Docker with gpu (cuda) and Tensorflow:** [TODO]
+* We can train deep learning models with gpu with docker itself
+
+**Add user group to the docker:** [TODO]
 * This helps to remove sudo dependencies for running docker command
 
 **Change path of default docker:**
@@ -73,9 +77,12 @@ sudo docker run -it --dns 10.47.56.129 -v docker_share:/home/jyadavso/sourabh/Pl
 The above command will create a new volume inside the docker/volume and which will be shared with given container path. 
 To verify that you can sunn ``` sudo docker volume list```
 
-**Providing host IP to a docker container to watch the process from Host PC:**
+**Providing host IP to a docker container to watch the process from Host PC:** [TODO]
+* With this we wont face internet connectivity problems when we are inside docker.
+* A typical scenario happens that we wont be able to connect with pip install or apt-get install as by default internet wont be working inside the docker container.
 
-References:
+**Install docker with Jupyter support:**
+* We can rn docker with jupyter support on Host PC browser
 
 [1]: https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
 [2]: https://linuxhint.com/docker_volume_share_data/
