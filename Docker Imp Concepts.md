@@ -1,4 +1,5 @@
-## Practice based Docker learnings. It includes Docker concepts, commands and important links to solve issues.
+## Practice based Docker Documentation** 
+It includes Docker concepts, commands and important links to solve issues.
 
 **Install Docker:** [TODO]
 * Installing docker 19.03 for all the latest updates. Bellow commands were tested on docker 19.03
@@ -82,9 +83,17 @@ To verify that you can sunn ``` sudo docker volume list```
 * A typical scenario happens that we wont be able to connect with pip install or apt-get install as by default internet wont be working inside the docker container.
 
 **Install docker with Jupyter support:**
-* We can rn docker with jupyter support on Host PC browser
+* We can rn docker with jupyter support on Host-PC browser
+* Following are the steps:
+```
+sudo docker run -it --gpus all --dns 10.47.56.129 -p 8888:8888 --net=host  tensorflow/tensorflow:devel-gpu 
+```
+Here ```--net=host``` for providing the docker container mapped to host-pc. ```-p 8888:8888``` provides the port for jupyter server to map on Host-PC. This is optional as by defualt it will map to 8888 port.
+
+For more details on running jupyter running on docker you can look [here][4] and [here][5]
 
 [1]: https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
 [2]: https://linuxhint.com/docker_volume_share_data/
 [3]: https://www.ionos.com/community/server-cloud-infrastructure/docker/understanding-and-managing-docker-container-volumes/
-
+[4]: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html
+[5]: https://github.com/ReproNim/neurodocker/issues/82
