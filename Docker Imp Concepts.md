@@ -51,7 +51,11 @@ After a restart, (service docker restart) Docker should use the new directory.
 * This helps in soving issues related to apt-get update not working.
 * For this you need to provide correct dns setting for docker container to run.
 ```
-sudo docker run -it --dns 10.47.56.129 tensorflow/tensorflow:devel-gpu 
+sudo docker run -it --dns 10.47.56.129 tensorflow/tensorflow:devel-gpu
+
+OR
+
+sudo docker run -it --network=host tensorflow/tensorflow:devel-gpu 
 ```
 * Note: You might ned to find correct dns for your system
 
