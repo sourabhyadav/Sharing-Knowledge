@@ -4,8 +4,12 @@ It includes Docker concepts, commands and important links to solve issues.
 **Install Docker:** [TODO]
 * Installing docker 19.03 for all the latest updates. Bellow commands were tested on docker 19.03
 
-**Install Docker with gpu (cuda) and Tensorflow:** [TODO]
+**Install Docker with gpu (cuda) and Tensorflow:** 
 * We can train deep learning models with gpu with docker itself
+* It is required when you wanted to train a network which requires different versions of DL libraries like different PyToch, tensorflow along with support of Cuda. 
+* **Why not create simple python virtual environment?** Youcan create virtual enviroment for this kind of tasks but what if you have dependecies of Cuda driver version for a particular library say tensorflow does not work with cuda 10.1 (as on this date) and say you need pytorch 1.3.x requires cuda 10.1 for it run. At such situaltions docker with cuda support is required.
+* For docker with cuda support you need to install latest version of cuda drivers and then you will be able to use any version of cuDNN according to your code need. It is backward compatible.
+* For installation please follow [this][7] + [this][6]
 
 **Add user group to the docker:** [TODO]
 * This helps to remove sudo dependencies for running docker command
@@ -112,3 +116,5 @@ $ sudo docker run -it --gpus all --dns 10.47.56.129 -p 8888:8888 -v /home/jyadav
 [3]: https://www.ionos.com/community/server-cloud-infrastructure/docker/understanding-and-managing-docker-container-volumes/
 [4]: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html
 [5]: https://github.com/ReproNim/neurodocker/issues/82
+[6]: https://www.tensorflow.org/install/docker
+[7]: https://github.com/NVIDIA/nvidia-docker
