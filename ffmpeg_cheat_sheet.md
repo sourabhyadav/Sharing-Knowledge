@@ -5,6 +5,13 @@
 fmpeg -i input.mp4 img_%5d.jpg
 ```
 
+**Dump frames from video with specific size**  
+```
+ffmpeg -i Video.MP4 -s 192x168 Pictures%d.bmp
+```
+Here, ```192x168``` is ```-s <w>x<h>```
+
+
 **Select 1 frame out of every 10 frames**
 ```
 ffmpeg -i input.mov -vf "select=not(mod(n\,10))" -vsync vfr -q:v 2 img_%03d.jpg
@@ -19,6 +26,10 @@ ffmpeg -i ch01_00000000034000000.mp4 2>&1 | grep "Duration"
 ```  
 ffmpeg -i input.mov -vf scale=720x406 output.mov 
 ```  
-For more options visit [here][1]
+For more options visit [here][1]  
+
+
 [1]: https://video.stackexchange.com/questions/9947/how-do-i-change-frame-size-preserving-width-using-ffmpeg/9967
+
+
 
