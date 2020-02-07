@@ -128,7 +128,7 @@ Multi-class tracking is NOT possible as it depends on Human Pose.
 [9]: https://arxiv.org/abs/1905.02822  
 [10]: https://github.com/chenhaomingbob/test_track  
 
-** Other shortlisted trackers**  
+**Other shortlisted trackers**  
 * [Py-GOTURN][13]  
 * [siamese-mask-rcnn][14]
 * [ROLO][15]  
