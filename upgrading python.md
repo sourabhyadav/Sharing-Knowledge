@@ -2,8 +2,10 @@
 
 **Install Python 3.6** [here][1]  
 
-**Error solution for 'add-repository** [here][2]
+**Error solution for 'add-repository** [here][2]  
 
+[1]: https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get/865569#865569    
+[2]: http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/  
 
 In Ubuntu 16.04 default python is 2.7 and defaults python3 is 3.5. But if you want to install python 3.6 or above I found few seps you need to follow as given below.  
 
@@ -22,7 +24,3 @@ Ater this you can check your python version using:
 $ python3 -V
 Python 3.6.9
 ```  
-
-
-[1]: https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get/865569#865569  
-[2]: http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/
