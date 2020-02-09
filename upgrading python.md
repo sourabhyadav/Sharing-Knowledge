@@ -21,7 +21,8 @@ Ater this you can check your python version using:
 ```
 $ python3 -V
 Python 3.6.9
-```
+```  
+
 
 [1]: https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get/865569#865569  
 [2]: http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/
