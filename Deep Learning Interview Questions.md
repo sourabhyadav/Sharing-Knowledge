@@ -33,4 +33,9 @@ Following are few theoretical questions people ask. You might answer all
 
 **What is softmax? When to use softmax?**  
 
-**What is bias-vaiance problem?**
+**What is bias-vaiance problem?**  
+
+**Why 1x1 convolutions? How does it reduce computations?**
+* Depth-wise directionality reduction  
+* Makes input independent of size when compared to FC layer where input image has to be of fixed size due to FC layer is hard-coded stuff.  
+* Show calculation of how much 1x1 conv helps in reducing the computation. Refer to 1x1 conv.md in the same repo.  
