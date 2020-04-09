@@ -3,7 +3,7 @@
 * If you face any problems with installing pyqt. Do uninstall existing version and then reinstall with following commands.  
 ```
 pip3 uninstall pyqt5  
-pip3 uninstall pyqt5  
+pip3 install pyqt5  
 ```  
 * If you cae any problem with installing pyqt sip, try this:  
 ```
