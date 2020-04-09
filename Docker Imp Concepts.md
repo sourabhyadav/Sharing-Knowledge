@@ -111,6 +111,10 @@ $ sudo docker run -it --gpus all --dns 10.47.56.129 -p 8888:8888 -v /home/jyadav
 * ```xhost +``` provides access to your X server to be used by others
 * ``` -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1``` This command enables the permissions to use dispaly to the docker container. Rest all commands remains same.
 
+**Clean docker aqquired memory from the system**
+* As docker images and containers takes lot of memory, here are few smart commands which can help you free up the space.
+[docker image prune][8]
+
 [1]: https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
 [2]: https://linuxhint.com/docker_volume_share_data/
 [3]: https://www.ionos.com/community/server-cloud-infrastructure/docker/understanding-and-managing-docker-container-volumes/
@@ -118,3 +122,4 @@ $ sudo docker run -it --gpus all --dns 10.47.56.129 -p 8888:8888 -v /home/jyadav
 [5]: https://github.com/ReproNim/neurodocker/issues/82
 [6]: https://www.tensorflow.org/install/docker
 [7]: https://github.com/NVIDIA/nvidia-docker
+[8]: https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
