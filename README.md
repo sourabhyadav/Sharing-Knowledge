@@ -1,2 +1,2 @@
 # Sharing-Knowledge
-**Here I would like to share my experiences technical and non-technical**
+**A geek style blogging! Keeping it short and saving the links technical and non-technical**
