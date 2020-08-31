@@ -4,6 +4,9 @@
 **git pull and overwrite the local changes OR protect the local changes**  
 * [This worked for me][2]  
 
+**git merge bwtween branches and merge conflicts**  
+* [git merge concept][5]
+
 **How to resolve merge conflitchs**  
 * [Nice explaination here][3]  
 
@@ -17,3 +20,4 @@
 [2]: https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files  
 [3]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line  
 [4]: https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
+[5]: https://www.atlassian.com/git/tutorials/using-branches/git-merge
