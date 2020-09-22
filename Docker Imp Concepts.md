@@ -102,11 +102,11 @@ For more details on running jupyter running on docker you can look [here][4] and
 
 **Container with display permissions:**
 * Oftern it may happen that you will require to display images or other media inside the docker itself. 
-* Say ```cv2.imsho(...)```, with default docker container you will face lot of related to ```X server``` or ```cannot connected to diplay``` etc.
+* Say ```cv2.imshow(...)```, with default docker container you will face lot of related to ```X server``` or ```cannot connected to diplay``` etc.
 * To avoid this you need to provide permissions to docker container to use display. Following is the command tou can use it:
 ```
 $ xhost +
-$ sudo docker run -it --gpus all --dns 10.47.56.129 -p 8888:8888 -v /home/jyadavso/sourabh/Play_n_n_Learn/CV_DL/trackers/SiamMask:/home/jyadavso/sourabh/Play_n_n_Learn/CV_DL/trackers/SiamMask --name cont_siamese_mask_disp -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1 tensorflow/tensorflow:devel-gpu bash
+$ sudo docker run -it --gpus all --network host -p 8888:8888 -v /home:/home -v /data:/data --name cont_siamese_mask_disp -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1 tensorflow/tensorflow:devel-gpu bash
 ```
 * ```xhost +``` provides access to your X server to be used by others
 * ``` -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1``` This command enables the permissions to use dispaly to the docker container. Rest all commands remains same.
