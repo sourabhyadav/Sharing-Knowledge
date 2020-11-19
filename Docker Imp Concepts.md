@@ -113,7 +113,19 @@ $ sudo docker run -it --gpus all --network host -p 8888:8888 -v /home:/home -v /
 
 **Clean docker aqquired memory from the system**
 * As docker images and containers takes lot of memory, here are few smart commands which can help you free up the space.
-[docker image prune][8]
+[docker image prune][8]  
+
+**Get a container ID from within the container**  
+Once you are inside a docker container and if you might want to know the container ID to run same docker in different terminal. Following are the ways to can get those:  
+1. The shell name itself might tell the container ID: ```root@<container id>@```  
+Howeverm sometimes it might be overriden by the Linux i.e. '''root@hostname#```. If this is the case check for below options.  
+2. Try to print hostname ```echo $HOSTNAME```  
+This might also be overridden to PC hostname.  Check out other option.  
+3. Use this command to print get the docker container ID from inside docker container:  
+```head -1 /proc/self/cgroup|cut -d/ -f3```  
+The above command worked for me on the ```docker --version : Docker version 19.03.5, build 633a0ea838``` on Ubuntu 16.04.  
+For more details and alternate commands visit [here][9] or googlee it :P
+
 
 [1]: https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
 [2]: https://linuxhint.com/docker_volume_share_data/
@@ -122,4 +134,5 @@ $ sudo docker run -it --gpus all --network host -p 8888:8888 -v /home:/home -v /
 [5]: https://github.com/ReproNim/neurodocker/issues/82
 [6]: https://www.tensorflow.org/install/docker
 [7]: https://github.com/NVIDIA/nvidia-docker
-[8]: https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+[8]: https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/  
+[9]: https://forums.docker.com/t/get-a-containers-full-id-from-inside-of-itself/37237/2  
