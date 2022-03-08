@@ -124,7 +124,11 @@ This might also be overridden to PC hostname.  Check out other option.
 3. Use this command to print get the docker container ID from inside docker container:  
 ```head -1 /proc/self/cgroup|cut -d/ -f3```  
 The above command worked for me on the ```docker --version : Docker version 19.03.5, build 633a0ea838``` on Ubuntu 16.04.  
-For more details and alternate commands visit [here][9] or googlee it :P
+For more details and alternate commands visit [here][9] or googlee it :P  
+
+**Create docker image without image name or image name or tag name is <none>:**  
+- Many times it may happen that the image name (REPOSITORY) and tag appears to be <none>. In such case use ```-t <image id> ```` along ith your docker run command.  
+```$ sudo docker run -it <image id> --gpus all --network host -p 8888:8888 -v /home:/home bash .... ```
 
 
 [1]: https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
