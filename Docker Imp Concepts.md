@@ -127,7 +127,8 @@ The above command worked for me on the ```docker --version : Docker version 19.0
 For more details and alternate commands visit [here][9] or googlee it :P  
 
 **Create docker image without image name or image name or tag name is <none>:**  
-- Many times it may happen that the image name (REPOSITORY) and tag appears to be <none>. In such case use ```-t <image id> ```` along ith your docker run command.  
+- Many times it may happen that the image name (REPOSITORY) and tag appears to be <none>. In such case use ```-t <image id> ``` along ith your docker run command.    
+    
 ```$ sudo docker run -it <image id> --gpus all --network host -p 8888:8888 -v /home:/home bash .... ```
 
 
