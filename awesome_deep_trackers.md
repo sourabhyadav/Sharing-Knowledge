@@ -1,8 +1,7 @@
 ## A practical guide to choose different state-of-the-art trackers
 
-Usage of deep-learning techniques in the tracker is relative new when compared to object detection and image classification techniques.
-
-Here we try to address the issue of choosing a right tracker for any given application or project. Many a times MOT quantitative measure (MOTA, MOTP etc.) are not just enough to choose a tracker. Choosing trackers is relatively difficult because of assumptions made for writing tracker algorithm, wide variety of practical usage concerns, and things associated with temporal domain. 
+Here I tried to address the issue of choosing the right tracker for any given application or project. Many times MOT quantitative measures (MOTA, MOTP, etc.) are not just enough to choose a tracker. Choosing trackers is relatively difficult because of assumptions made for writing tracker algorithms, a wide variety of practical usage concerns, and things associated with the temporal domain. A few notable attributes are:  
+ 
 Few notable attributes are:
  * track object ID generation
  * track object re-identification
@@ -13,13 +12,13 @@ Few notable attributes are:
  * stationary vs moving camera etc.
 
 
-Below are a few latest trackers which with deep learning capabilities and corresponding insights to each of them:  
+Below are a few latest trackers with deep learning capabilities and corresponding insights to each of them:  
 
 **Testing Setup:**  
 
 * These trackers are tested on 6 testing videos taken from static CCVT camera where humans are walking.    
 * All the timing performance is taken on NVIDIA RTX 2080 10GB.  
-* Trackers are tested with default settings provided by author's git repo.  
+* Trackers are tested with default settings provided by the author's git repo.  
 * We used Yolo v3 (coco 80 classes) as Object detection for all the trackers.  
 
 **1. [Simple online and realtime tracking][1]**    
@@ -35,7 +34,7 @@ Does good with different view-points.
 
 **Cons:**  
 Tracking accuracy is highly sensitive to object detection accuracy.    
-To get best performance you have to provide object bounding box for each frame.    
+To get best performance you have to provide an object bounding box for each frame.    
 Variety of tunable thresholds to play around.    
 Object missing mechanism is poor.  
 Consecutive 3 detections are required to generate track ID.  
@@ -78,7 +77,7 @@ Publication Year: CVPR 2019
 Official Github: [link][6]  
 
 **Pros**  
-This does not have frame ID generation needs to be done externally. 
+This does not have frame ID generation than needs to be done externally. 
 Provides tighter bounding box.  
 Provides segmentation mask of the given object.    
 Re-identification is done using a trained model for humans. We can retrain for our use case.  
@@ -89,7 +88,7 @@ Multi-class tracking is possible with any multi-class pre-trained model.
 **Cons:**  
 Only single time detection would work for tracking.   
 Does a good job even if detection accuracy is very poor.     
-Object missing mechanism is poor.  
+The object missing mechanism is poor.  
 
 **Performance:**  45-50 fps 
  
@@ -112,7 +111,7 @@ Less sensitive towards different view-point of objects.
 
 **Cons:**  
 Tracking accuracy is highly sensitive to object detection accuracy.  
-To get best performance you have to provide object bounding box for each frame.  
+To get the best performance you have to provide object bounding box for each frame.  
 ID switch is very frequent.  
 Performance depends on how well the object detector is trained.  
 
@@ -128,7 +127,7 @@ Official Github: [link][10]
 
 **Pros**  
 This tracker comes up with its own track ID generation.      
-Re-identification is done using a trained model for humans poses.  
+Re-identification is done using a trained model for human poses.  
 Does object detection and appearance tracking jointly.  
 It has its own matching mechanism cost function to assign IDs.  
 Training script is available.  
@@ -138,7 +137,7 @@ ID switch is very good.
 Track-loose is easily identified.
 
 **Cons:**  
-Performance depends on how well the object detector and pose detector is trained.  
+Performance depends on how well the object detector and pose detector are trained.  
 Multi-class tracking is NOT possible as it depends on Human Pose.  
 
 **Performance:**  5-6 fps
@@ -147,9 +146,9 @@ Multi-class tracking is NOT possible as it depends on Human Pose.
 [10]: https://github.com/chenhaomingbob/test_track
 ## A practical guide to choose different state-of-the-art trackers
 
-Usage of deep-learning techniques in the tracker is relative new when compared to object detection and image classification techniques.
+Usage of deep-learning techniques in the tracker is relatively new when compared to object detection and image classification techniques.
 
-Here we try to address the issue of choosing a right tracker for any given application or project. Many a times MOT quantitative measure (MOTA, MOTP etc.) are not just enough to choose a tracker. Choosing trackers is relatively difficult because of assumptions made for writing tracker algorithm, wide variety of practical usage concerns, and things associated with temporal domain. 
+Here we try to address the issue of choosing the right tracker for any given application or project. Many times MOT quantitative measures (MOTA, MOTP etc.) are not just enough to choose a tracker. Choosing trackers is relatively difficult because of assumptions made for writing tracker algorithms, a wide variety of practical usage concerns, and things associated with the temporal domain. 
 Few notable attributes are:
  * track object ID generation
  * track object re-identification
@@ -168,7 +167,7 @@ Below are a few latest trackers which with deep learning capabilities and corres
 * All the timing performance is taken on NVIDIA RTX 2080 10GB.  
 * Trackers are tested with default settings provided by author's git repo.  
 * We used Yolo v3 (coco 80 classes) as Object detection for all the trackers.  
-* Qualitative results for each of this trackers are share on OneDrive.  
+* Qualitative results for each of this tracker are share on OneDrive.  
 
 **1. [Simple online and realtime tracking][1]**    
 Publication year: ICIP 2016  
